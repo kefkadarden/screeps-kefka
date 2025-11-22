@@ -2,7 +2,24 @@
   "name": "screeps-kefka",
   "version": "0.1.0",
   "private": true,
+  "description": "Screeps code by Kefka D'Arden",
+  "keywords": [
+    "screeps",
+    "code"
+  ],
+  "homepage": "https://github.com/kefkadarden/screeps-kefka#readme",
+  "bugs": {
+    "url": "https://github.com/kefkadarden/screeps-kefka/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kefkadarden/screeps-kefka.git"
+  },
+  "license": "ISC",
+  "author": "Kefka D'Arden",
   "type": "module",
+  "main": "main.ts",
+  "module": "NodeNext",
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -c -w",
@@ -11,6 +28,9 @@
     "lint:types": "tsc --noEmit",
     "lint": "eslint 'src/**/*.ts' --max-warnings=0",
     "format": "prettier --write 'src/**/*.ts'"
+  },
+  "dependencies": {
+    "screeps-api": "^1.6.5"
   },
   "devDependencies": {
     "typescript": "^5.4.0",
@@ -27,8 +47,5 @@
     "eslint-config-prettier": "^9.0.0",
     "prettier": "^3.1.0",
     "eslint_d": "^13.1.2"
-  },
-  "dependencies": {
-    "screeps-api": "^1.6.5"
   }
 }
