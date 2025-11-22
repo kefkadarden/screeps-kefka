@@ -7,7 +7,6 @@ export default {
   output: {
     file: 'dist/main.js',
     format: 'cjs',
-    intro: 'var global = globalThis;'
   },
   plugins: [
     resolve(),
